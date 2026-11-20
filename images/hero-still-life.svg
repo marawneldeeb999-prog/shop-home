@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf0e7"/><stop offset="1" stop-color="#d9e1d4"/></linearGradient>
+    <linearGradient id="arch" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e5d7c1"/><stop offset="1" stop-color="#c9b797"/></linearGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#a99373"/><stop offset=".42" stop-color="#e8dcc5"/><stop offset=".72" stop-color="#d1c1a4"/><stop offset="1" stop-color="#ab987b"/></linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#94a187"/><stop offset="1" stop-color="#586b57"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#fff5d8" stop-opacity=".85"/><stop offset="1" stop-color="#fff5d8" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+    <pattern id="grain" width="46" height="46" patternUnits="userSpaceOnUse"><circle cx="7" cy="12" r="1" fill="#63735e" opacity=".14"/><circle cx="31" cy="34" r=".8" fill="#63735e" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1000" height="780" fill="url(#wall)"/>
+  <rect width="1000" height="780" fill="url(#grain)" opacity=".55"/>
+  <path d="M92 570V287C92 132 218 49 370 49s278 83 278 238v283H92Z" fill="url(#arch)" opacity=".82"/>
+  <circle cx="734" cy="165" r="175" fill="url(#light)"/>
+  <path d="M0 611c203-25 375 16 555 2 173-14 283-2 445 9v158H0V611Z" fill="#d0c3ab"/>
+  <path d="M0 633c230-19 459 23 1000-1" stroke="#b9aa90" stroke-opacity=".55" stroke-width="2"/>
+  <ellipse cx="517" cy="656" rx="211" ry="38" fill="#554a3b" opacity=".23" filter="url(#shadow)"/>
+  <path d="M506 422c-9-124 2-190-6-261M510 421c36-105 70-160 116-221M502 420c-47-87-92-127-141-166" stroke="#566a54" stroke-width="8" stroke-linecap="round"/>
+  <path d="M492 270c-83-10-113-74-84-125 71 4 111 51 84 125Z" fill="url(#leaf)"/>
+  <path d="M531 311c86-24 112-91 74-139-69 17-99 71-74 139Z" fill="url(#leaf)"/>
+  <path d="M468 355c-88 4-131-50-109-105 74-5 120 33 109 105Z" fill="#71836c"/>
+  <path d="M556 367c83-7 125-63 98-114-72 0-117 42-98 114Z" fill="#7f8e73"/>
+  <path d="M422 557c-2-64 13-118 38-141 16-15 60-15 76 0 25 23 40 77 38 141l-9 85c-3 28-29 48-67 48s-64-20-67-48l-9-85Z" fill="url(#ceramic)"/>
+  <path d="M460 417c4-26 8-46 8-65h60c0 19 4 39 8 65" fill="url(#ceramic)"/>
+  <path d="M467 351h62" stroke="#9c896a" stroke-width="8"/>
+  <path d="M452 476c-8 43-8 87-2 129" stroke="#fff9eb" stroke-opacity=".48" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="498" cy="692" rx="81" ry="9" fill="#87765c" opacity=".17"/>
+  <text x="54" y="730" fill="#596b57" font-family="Georgia,serif" font-size="17" letter-spacing="5">FORME / OBJECTS FOR SLOW LIVING</text>
+</svg>

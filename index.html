@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e6eadf">
+  <title>فورم — أشياء للبيت</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home">FORME<span>.</span></a>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="#collection">المجموعة</a>
+      <a href="#story">حكايتنا</a>
+    </nav>
+    <button class="cart-button" id="open-cart" type="button" aria-label="فتح سلة المشتريات" aria-haspopup="dialog" aria-controls="cart-dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      السلة <span id="cart-count">0</span>
+    </button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">أشياء تعيش معك كل يوم</p>
+        <h1>جمال بسيط.<br><em>حياة أهدى.</em></h1>
+        <p class="intro">قطع مختارة بعناية، بخامات طبيعية وتصميم يعيش معاك سنين.</p>
+        <a class="button" href="#collection">اكتشف المجموعة <span aria-hidden="true">←</span></a>
+      </div>
+      <img class="hero-art" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;w=1400&amp;q=88" alt="غرفة معيشة هادئة بتفاصيل خشبية وخزفية">
+    </section>
+    <section class="collection" id="collection">
+      <div class="section-title"><div><p class="eyebrow">مختارة ليومك</p><h2>قطع مفضلة</h2></div><span>01 — 24</span></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="مزهرية هدوء من السيراميك الرملي"></div>
+          <div class="product-info"><div><h3>مزهرية هدوء</h3><p>سيراميك يدوي · رملي</p></div><strong>٤٨٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="vase"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="مصباح مساء بإضاءة دافئة وقاعدة خشبية"></div>
+          <div class="product-info"><div><h3>مصباح مساء</h3><p>خشب زان · كريمي</p></div><strong>٩٢٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="lamp"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="وعاء يومي مصنوع يدويًا بلون زيتوني"></div>
+          <div class="product-info"><div><h3>وعاء يومي</h3><p>فخار طبيعي · زيتوني</p></div><strong>٣٦٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="bowl"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="كرسي خشبي بتصميم بسيط"></div>
+          <div class="product-info"><div><h3>كرسي نور</h3><p>خشب طبيعي · قوام ناعم</p></div><strong>١٬٨٥٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="chair"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="طاولة خشبية بتصميم طبيعي"></div>
+          <div class="product-info"><div><h3>طاولة مَسَا</h3><p>خشب بلوط · تشطيب صافي</p></div><strong>٢٬٤٠٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="table"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product">
+          <div class="product-art"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="صينية ديكور خشبية في غرفة هادئة"></div>
+          <div class="product-info"><div><h3>صينية رَكْن</h3><p>خشب جوز · تشطيب طبيعي</p></div><strong>٥٩٠ ج.م</strong></div>
+          <button class="add-button" type="button" data-product-id="tray"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></button>
+        </article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="ديكور غرفة معيشة أنيق"></div><div class="product-info"><div><h3>قنديل صُبْح</h3><p>زجاج شفاف · ذهبي</p></div><strong>٦٤٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="pendant"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="غرفة مكتبية بتصميم بسيط"></div><div class="product-info"><div><h3>مكتب لُب</h3><p>خشب طبيعي · تصميم هادئ</p></div><strong>٣٬٢٠٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="desk"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="أريكة مريحة بلون أخضر"></div><div class="product-info"><div><h3>أريكة ورد</h3><p>قماش قطني · أخضر زيتوني</p></div><strong>٨٬٩٠٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="sofa"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="كرسي مفرد بتصميم مريح"></div><div class="product-info"><div><h3>كرسي سُكّن</h3><p>مخمل ناعم · بيج رملي</p></div><strong>٢٬٦٥٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="armchair"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="طاولة قهوة خشبية في غرفة هادئة"></div><div class="product-info"><div><h3>طاولة قهوة سكون</h3><p>خشب بلوط · دائرية</p></div><strong>١٬٩٢٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="coffeetable"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="وسادة ناعمة وملاءات سرير"></div><div class="product-info"><div><h3>وسادة خِرِف</h3><p>كتان طبيعي · رمادي فاتح</p></div><strong>٣٨٥ ج.م</strong></div><button class="add-button" type="button" data-product-id="pillow"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="سرير بتصميم بسيط وخامات هادئة"></div><div class="product-info"><div><h3>سرير هَنَا</h3><p>خشب زان · رأس منجد</p></div><strong>٦٬٨٠٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="bed"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="وحدة تخزين خشبية لغرفة النوم"></div><div class="product-info"><div><h3>دولاب ضُلّ</h3><p>خشب طبيعي · أبواب ناعمة</p></div><strong>٥٬٤٥٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="wardrobe"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="مطبخ عصري بتفاصيل خشبية"></div><div class="product-info"><div><h3>رف مطبخ رُمّان</h3><p>خشب جوز · رف مفتوح</p></div><strong>١٬٣٥٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="kitchenshelf"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="أكواب سيراميك لتقديم القهوة"></div><div class="product-info"><div><h3>كوب صباح</h3><p>سيراميك كريمي · ٢ كوب</p></div><strong>٢٨٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="cups"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="أدوات مطبخ وحِرف عملية"></div><div class="product-info"><div><h3>لوح تقطيع عُسّ</h3><p>خشب زان · مقاس وسط</p></div><strong>٣٣٥ ج.م</strong></div><button class="add-button" type="button" data-product-id="board"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="حمام بتفاصيل حجرية طبيعية"></div><div class="product-info"><div><h3>صابون حجر الكلس</h3><p>صابون نباتي · برائحة اللافندر</p></div><strong>١٦٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="soap"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="منشفة حمام وديكور منزلي"></div><div class="product-info"><div><h3>منشفة نسيم</h3><p>قطن عضوي · أبيض قشدي</p></div><strong>٤٩٥ ج.م</strong></div><button class="add-button" type="button" data-product-id="towel"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="شموع معطرة بتصميم هادئ"></div><div class="product-info"><div><h3>شمعة خريف</h3><p>شمع صويا · خشب الصندل</p></div><strong>٤٢٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="candle"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="نباتات منزلية في أصيص"></div><div class="product-info"><div><h3>نبتة بَهْجة</h3><p>نبات داخلي · أصيص خزف</p></div><strong>٣٢٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="plant"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="رواق معيشة ومرآة دائرية"></div><div class="product-info"><div><h3>مرآة وَهْج</h3><p>إطار نحاسي · مقاس كبير</p></div><strong>١٬١٥٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="mirror"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="لوحة جدارية بتكوين فني هادئ"></div><div class="product-info"><div><h3>لوحة مَحْدود</h3><p>طبعة فنية · إطار خشب</p></div><strong>٧٥٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="art"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+        <article class="product"><div class="product-art"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=900&amp;q=88" alt="سجادة طبيعية وديكور غرفة"></div><div class="product-info"><div><h3>سجادة طِين</h3><p>قطن منسوج · بيج طبيعي</p></div><strong>١٬٤٨٠ ج.م</strong></div><button class="add-button" type="button" data-product-id="rug"><span>أضف للسلة</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><path d="M10 13h8M14 9v8"/></svg></button></article>
+      </div>
+    </section>
+    <section class="story" id="story">
+      <span class="story-mark">f.</span>
+      <div><p class="eyebrow">تفاصيل لها معنى</p><h2>مش أكتر.<br>بس أحسن.</h2></div>
+      <p>بنختار خامات طبيعية ونتعاون مع صُنّاع محليين عشان كل قطعة يبقى لها حكاية وتعيش وقت أطول.</p>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#home">FORME<span>.</span></a><a href="../../index.html">العودة لمعرض مروان ↗</a></footer>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-head">
+      <div><p class="eyebrow">FORME / BAG</p><h2 id="cart-title">سلة مشترياتك <span id="cart-item-label">0 منتجات</span></h2></div>
+      <button class="close-cart" id="close-cart" type="button" aria-label="إغلاق السلة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="cart-content">
+      <div class="cart-empty" id="cart-empty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <h3>سلتك لسه فاضية</h3><p>اختار قطعة تحبها وهنضيفها هنا.</p>
+        <button id="continue-shopping" type="button">اكتشف المجموعة <span>←</span></button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+    </div>
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="shipping-note"><span>✦</span> الشحن بيتحدد عند تأكيد العنوان</div>
+      <div class="cart-total"><span>الإجمالي</span><strong id="cart-total">0 ج.م</strong></div>
+      <button class="checkout-button" id="checkout-button" type="button">
+        إتمام الطلب عبر واتساب
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <button class="clear-cart" id="clear-cart" type="button">إفراغ السلة</button>
+    </div>
+  </dialog>
+  <p class="toast" id="toast" role="status" aria-live="polite"></p>
+</body>
+</html>
